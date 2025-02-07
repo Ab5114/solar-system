@@ -1,0 +1,120 @@
+ *{
+        box-sizing: border-box;
+    }
+    body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+.container {
+    font-size: 10px;
+width: 100%;
+height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+.sun {
+     position: absolute;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth,
+.moon {
+    position: absolute;
+    border-style: solid ;
+    border-color: white transparent transparent white  ;
+border-width: 0.1em 0.1em 0.1em 0em; /*border -right must be given 0.1em if tranpsapremt since 0em will be no switched to abruptly* if value is 0em it doesnot matter you wrte which colour*/
+     border-radius: 50%;
+}
+.earth {
+   
+    width: 30em;
+    height: 30em;   
+    animation: orbit 30s linear infinite ;
+}
+.moon {
+    top: 0; 
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+}
+.earth::before,
+.moon::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+.earth::before {
+    top: 25px;
+    right: 25px;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+}
+.moon::before{
+    background-color: whitesmoke;
+    width: 10px;
+    height: 10px;
+    top: 6px;
+    right: 6px;
+}
+.mars{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-style: solid;
+      border-color: white transparent transparent white  ;
+border-width: 0.1em 0.1em 0.1em 0em;
+      animation: orbit 36.5s linear infinite;
+
+}
+.mars::before{
+        position: absolute;
+        content: '';
+      width: 10px;
+    height: 10px;
+    top: 60px;
+    right: 60px;
+    border-radius: 50%;
+    background-color: brown;
+
+
+}
+
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+  
+        
+ @keyframes twinkling {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        .control{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            color: white;
+            display: flex;
+            gap: 8px;
+             & label{font-size: 1.5em;}
+        }
+        
