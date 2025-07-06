@@ -38,10 +38,6 @@ solar-system/
 ├── script.js # Dropdown speed logic
 └── assets/ # (Optional) planet images
 
-## 📸 Preview
-
-> Add a screenshot here if needed  
-`![Solar System Preview](preview.png)`
 
 ## 🧠 Inspiration
 
