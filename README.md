@@ -32,4 +32,26 @@ Each celestial body has its own **speed dropdown menu**:
 No buttons required — simply pick a speed from the menu!
 
 ## 📁 Folder Structure
+solar-system/
+├── index.html # Main HTML file
+├── style.css # Styling and animations
+├── script.js # Dropdown speed logic
+└── assets/ # (Optional) planet images
+
+## 📸 Preview
+
+> Add a screenshot here if needed  
+`![Solar System Preview](preview.png)`
+
+## 🧠 Inspiration
+
+Built to create an intuitive, interactive visualization of planetary motion and orbit behavior for learning and demonstration purposes.
+
+## 🤝 Contributing
+
+If you'd like to improve visuals, add more planets, or refine controls — feel free to fork and open a pull request!
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
