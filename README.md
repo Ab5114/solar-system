@@ -36,7 +36,7 @@ solar-system/
 ├── index.html # Main HTML file
 ├── style.css # Styling and animations
 ├── script.js # Dropdown speed logic
-└── assets/ # (Optional) planet images
+└── assets/ #  planet images
 
 
 ## 🧠 Inspiration
@@ -47,7 +47,5 @@ Built to create an intuitive, interactive visualization of planetary motion and 
 
 If you'd like to improve visuals, add more planets, or refine controls — feel free to fork and open a pull request!
 
-## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
 
